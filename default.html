@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Assignment8 Task2</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</head>
+<body>
+    <!-- 1) Bootstrap: jumbotron
+        Jumbotron indicates a big grey box for calling extra attention to some
+        special content or information
+        -->
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>INTI TABLE TENNIS CLUB</h1>
+    </div>
+
+    <!--
+        2) Bootstrap: navbar
+        A navigation bar is a navigation header that is placed at the top of the page
+        -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="nav navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="default.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div style="width:700px; height:350px; margin:30px auto 0px auto; text-align:center;">
+    <!-- 
+        3) Bootstrap: tooltip
+        Tooltip is small pop-up box that appears when the user hovers the mouse pointer.
+        -->
+        <h2><a href="#" data-toggle="tooltip" data-placement="top" title="Inti Campus Pictures">INTI CAMPUS SLIDE</a></h2>
+
+        <!--
+            4) Bootstrap: carousel
+            The Carousel is a slideshow for cycling through elements.
+            -->
+        <div id="campus" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+                <li data-target="#campus" data-slide-to="0" class="active"></li>
+                <li data-target="#campus" data-slide-to="1"></li>
+                <li data-target="#campus" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <!--
+                        5) Bootstrap: Images
+                        .img-thumbnail class shapes the image to a thumbnail (bordered)
+                        -->
+                    <img src="https://newinti.edu.my/wp-content/uploads/2018/01/IU_campus_small.jpg" alt="Inti Subang" width="900" height="400" class="img-thumbnail" />
+                    <div class="carousel-caption">
+                        <h3>INTI UNIVERSITY NILAI CAMPUS</h3>
+                        <p>Inti Main Campus</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://newinti.edu.my/wp-content/uploads/2018/01/IICS_campus_small.jpg" alt="Inti Nilai" width="900" height="400" class="img-thumbnail" />
+                    <div class="carousel-caption">
+                        <h3>INTI COLLEGE SUBANG CAMPUS</h3>
+                        <p>Inti Subang Campus</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://newinti.edu.my/wp-content/uploads/2018/02/IICP533.jpg" alt="Inti Penang" width="900" height="400" class="img-thumbnail" />
+                    <div class="carousel-caption">
+                        <h3>INTI COLLEGE PENANG CAMPUS</h3>
+                        <p>Inti Penang Campus</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#campus" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#campus" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div><br />
+
+        <!--
+            6) Bootstrap: card
+           Card is a bordered box with some padding around its content.
+            -->
+        <div class="card-columns">
+            <div class="card bg-primary">
+                <div class="card-body text-center">
+                    <img src="https://lh3.googleusercontent.com/ZcVFGYU358LNc8cVbR7TSb-Fm4edtTsyc861uwTJ87G35bpVR1QrECgXeTQKlBsdl_4o1mjk=w1080-h608-p-no-v0" width="180" height="120" />
+                    <p class="card-text" style="color:white;">
+                        There was a big event of table tennis match. A lot of people from 10 countries
+                        gathered together to play the table tennis together.
+                    </p>
+                </div>
+            </div>
+            <div class="card bg-danger">
+                <div class="card-body text-center">
+                    <img src="https://www.stalbridge.info/uploads/3/1/5/8/31586035/table-tennis-orig_orig.jpg" width="180" height="120" />
+                    <p class="card-text" style="color:white;">
+                        Nowadays, the number of those who would like to learn table tennis is growing up.
+                        It is recommended that you learn this table tennis!
+                    </p>
+                </div>
+            </div>
+            <div class="card bg-success">
+                <div class="card-body text-center">
+                    <img src="http://static1.squarespace.com/static/5a6fd14fdc2b4a16edb5d350/5a92ec2971c10b0d65396ba3/5b5a8c9a0e2e7212a76d1dd0/1561473808292/table_tennis_csp3483235.jpg?format=1500w" width="180" height="120" />
+                    <p class="card-text" style="color:white;">
+                        Table tennis is historical sport because it has long history. Welcome to table
+                        tennis museum to look through everything of table tennis.
+                    </p>
+                </div>
+            </div>
+        </div><br />
+
+        <!--
+            7) Bootstrap: Table
+            Bootstrap 4 table has a light padding and horizontal dividers.
+            -->
+        <div>
+            <h4><a href="#" data-toggle="tooltip" data-placement="bottom" title="Leaders from 2017 to 2019">TABLE TENNIS CLUB LEADERS</a></h4>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>2017</th>
+                        <th>2018</th>
+                        <th>2019</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ALEX BRIAN</td>
+                        <td>ROBINSON ERIC</td>
+                        <td>PAUL WILLIAM</td>
+                    </tr>
+                    <tr>
+                        <td>MARY ESTHER</td>
+                        <td>ANNA REBEKKA</td>
+                        <td>ELIZABETH</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div><br />
+
+        <!--
+            8) Bootstrap: Button
+            -->
+        <div>
+            <h4>Click buttons for more information</h4>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+                SUBANG CAMPUS
+            </button> &nbsp; &nbsp;
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modal2">
+                NILAI CAMPUS
+            </button> &nbsp; &nbsp;
+            <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal3">
+                PENANG CAMPUS
+            </button>
+        </div>
+    </div><br />
+
+    <!--
+        9) Bootstrap: Modal
+        Modal Component is a dialog box/popup window that is displayed on top of the current page
+    -->
+    <div class="modal" id="modal1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">INTI SUBANG CAMPUS</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body" style="text-align:center;">
+                    <img src="https://www.easyuni.my/media/institution/photo/2015/10/29/1.jpg.600x400_q85.jpg" width="400" height="300" /><br />
+                    <b>Address:</b> 3, Jalan SS 15/8, Ss 15, 47500 Subang Jaya, Selangor
+                    <b>Phone:</b> 03-5623 2800
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">INTI NILAI CAMPUS</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body" style="text-align:center;">
+                    <img src="https://newinti.edu.my/wp-content/uploads/2018/01/IU_campus_small.jpg" width="400" height="300" /><br />
+                    <b>Address:</b> Persiaran Perdana BBN, Putra Nilai, 71800 Nilai, Negeri Sembilan
+                    <b>Phone:</b> 06-798 2000
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">INTI PENANG CAMPUS</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body" style="text-align:center;">
+                    <img src="https://newinti.edu.my/wp-content/uploads/2018/02/IICP533.jpg" width="400" height="300" /><br />
+                    <b>Address:</b> 1-Z, Lebuh Bukit Jambul, Bukit Jambul, 11900 Bayan Lepas, Pulau Pinang
+                    <b>Phone:</b> 04-631 0138
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

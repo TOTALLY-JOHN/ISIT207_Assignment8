@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Assignment8 Task1</title>
+    <style>
+        body {
+            background-image:url("https://images.pexels.com/photos/2946979/pexels-photo-2946979.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+            background-size:100%;
+        }
+
+        #container {
+            width:924px;
+            height:600px;
+            margin:0px auto 0px auto;
+            border:2px solid black;
+            background-color:white;
+        }
+
+        #header {
+            width:924px;
+            height:80px;
+            border-bottom:1px solid black;
+            float:left;
+            text-align:center;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        #body {
+            padding-left:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Elementary Mathematical Tutorials</h1>
+        </div>
+        <div id="body">
+            <div id="question1">
+                <p><b>Q1.</b> What is the area of this rectangle?</p>
+                <svg width="400" height="120">
+                    <rect width="350" height="90" style="fill:rgb(76, 255, 0); stroke-width:1; stroke:rgb(0,0,0)" />
+                    <text x="160" y="107" fill="black">10cm</text>
+                    <text x="355" y="50" fill="black">3cm</text>
+                </svg>
+            </div>
+            <div id="question2">
+                <p><b>Q2.</b> If the area of triangle is 9, what is the height?</p>
+                <svg width="400" height="120">
+                    <polygon points="150,5 50,100 250,100" style="fill:orange; stroke:black; stroke-width:1" />
+                    <text x="140" y="120" fill="black">6cm</text>
+                </svg>
+            </div>
+            <div id="question3">
+                <p><b>Q3.</b> If the radius is 6cm, what is r<sup>2</sup> + 2r ?</p>
+                <svg width="400" height="120">
+                    <circle cx="150" cy="60" r="55" stroke="black" stroke-width="1" fill="yellow" />
+                </svg>
+            </div>
+            <div id="question4" style="position:absolute; left:650px; top:80px;">
+                <p><b>Q4.</b> What is the number of cases do people to go from A to C ?</p>
+                <svg width="450" height="400">
+                    <path id="lineAC" d="M 50 50 l 350 150" stroke="red" stroke-width="3" fill="none"/>
+                    <path id="lineAB_way1" d="M 50 50 q 135 -65 175 75" stroke="blue" stroke-width="3" fill="none"/>
+                    <path id="lineAB_way2" d="M 50 50 q 40 130 175 75" stroke="green" stroke-width="3" fill="none"/>
+                    <path id="lineBC_way1" d="M 225 125 q 40 140 175 75" stroke="orange" stroke-width="3" fill="none"/>
+                    <path id="lineBC_way2" d="M 225 125 q 60 90 175 75" stroke="darkblue" stroke-width="3" fill="none"/>
+                    <path id="lineBC_way3" d="M 225 125 q 120 -20 175 75" stroke="purple" stroke-width="3" fill="none"/>
+                    <path id="lineBC_way4" d="M 225 125 q 135 -70 175 75" stroke="brown" stroke-width="3" fill="none"/>
+                    <g stroke="black" stroke-width="3" fill="black">
+                        <circle id="pointA" cx="50" cy="50" r="3" />
+                        <circle id="pointB" cx="225" cy="125" r="3" />
+                        <circle id="pointC" cx="400" cy="200" r="3" />
+                    </g>
+                    <g font-size="25" font-family="sans-serif" fill="black" stroke="none" text-anchor="middle">
+                        <text x="50" y="50" dx="-20" dy="5">A</text>
+                        <text x="225" y="125" dx="-5" dy="30">B</text>
+                        <text x="400" y="200" dy="30">C</text>
+                    </g>
+                </svg>
+            </div>
+            <div id="question5" style="position:absolute; left:650px; top:360px;">
+                <p><b>Q5.</b> If <span style="text-decoration:overline;">DE</span> is 3cm, what is the total length?</p>
+                <svg width="500" height="200">
+                    <polyline points="20,20 20,100 100,100 100,20 180,20, 180,100, 260,100 260,20 340,20 340,100 420,100 420,20" style="fill:none; stroke:blue; stroke-width:3"/>
+                    <g stroke="black" stroke-width="3" fill="black">
+                        <circle id="pointD" cx="20" cy="100" r="3"/>
+                        <circle id="pointE" cx="100" cy="100" r="3"/>
+                    </g>
+                    <g font-size="25" font-family="sans-serif" fill="black" stroke="none" text-anchor="middle">
+                        <text x="20" y="100" dy="30">D</text>
+                        <text x="100" y="100" dy="30">E</text>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
